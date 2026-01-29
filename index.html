@@ -8,7 +8,7 @@
     <style>
         :root {
             --primary-color: #4a90e2;
-            --accent-color: #888; /* カタカナ用の少し薄いグレー */
+            --accent-color: #888;
             --test-color: #62b300;
             --bg-color: #f0f2f5;
             --border-color: #e9ecef;
@@ -154,7 +154,7 @@
             const uttr = new SpeechSynthesisUtterance();
             uttr.text = text;
             uttr.lang = 'en-US';
-            uttr.rate = 0.77;    // 読み上げ速度を表す
+            uttr.rate = 0.75;    // 読み上げ速度を表す
             if (onEndCallback) uttr.onend = onEndCallback;
             speechSynthesis.cancel();
             speechSynthesis.speak(uttr);
